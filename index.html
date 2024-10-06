@@ -12,49 +12,44 @@
         <link rel="stylesheet" href="styles/hoja_de_estilos.css">
     </head>
     <body>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-dark">
-                <a class="navbar-brand" href="index.html">
-                    <img class="logo" href="#" src="images/logo-pccomponentes.webp" alt="logo-pccomponentes" title="logo-pccomponentes">
-                </a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 container d-flex justify-content-around align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item"><div class="dropdown">
-                            <a class="nav-link" href="pages/Componentes.html">Componentes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/Monitores.html">Monitores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/Notebook.html">Notebooks</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/Perifericos.html">Periféricos</a>
-                        </li>
-                        <li><a href="#">Logout</a></li>                                           
-                    </ul>
-                </div>
-            </nav>
-        </header>
         <main class="main_background">
             <h1 class="titulo_main_index text-center mb-4 mt-4">Ofertas Semanales</h1>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-3">
-                        <div class="card">
+                        <div class="card shadow-sm">
                             <img src="images/Producto-ejemplo.avif" class="card-img-top" alt="Imagen del producto">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Nombre del Producto</h5>
-                                <p class="card-text">$999.99</p>
+                                <h5 class="card-title">Procesador Ryzen 9 7900x </h5>
+                                <p class="card-text description">Procesador potente para gaming</p>
+                                <p class="card-text price">$999.99</p>
+                                <div class="quantity-control">
+                                    <button class="btn btn-outline-secondary" onclick="decreaseQuantity()">-</button>
+                                    <input type="number" id="quantity" class="form-control" value="1" min="1" readonly>
+                                    <button class="btn btn-outline-secondary" onclick="increaseQuantity()">+</button>
+                                </div>
+                                <button class="btn btn-primary w-100">Agregar al carrito</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+        <script src="/components/Navbar.js"></script>
+        <script>
+            function increaseQuantity() {
+                let quantityInput = document.getElementById('quantity');
+                let quantity = parseInt(quantityInput.value);
+                quantityInput.value = quantity + 1;
+            }
+            function decreaseQuantity() {
+                let quantityInput = document.getElementById('quantity');
+                let quantity = parseInt(quantityInput.value);
+                if (quantity > 1) {
+                    quantityInput.value = quantity - 1;
+                }
+            }
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
