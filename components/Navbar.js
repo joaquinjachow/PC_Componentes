@@ -1,9 +1,9 @@
 const navLinks = [
-    { href: "index.html", text: "Inicio" },
-    { href: "pages/Componentes.html", text: "Componentes" },
-    { href: "pages/Monitores.html", text: "Monitores" },
-    { href: "pages/Notebook.html", text: "Notebooks" },
-    { href: "pages/Perifericos.html", text: "Periféricos" }
+    { href: "Home.html", text: "Inicio" },
+    { href: "Componentes.html", text: "Componentes" },
+    { href: "Monitores.html", text: "Monitores" },
+    { href: "Notebook.html", text: "Notebooks" },
+    { href: "Perifericos.html", text: "Periféricos" }
 ];
 
 function createNavbar() {
@@ -12,11 +12,11 @@ function createNavbar() {
 
     const logoLink = document.createElement("a");
     logoLink.classList.add("navbar-brand");
-    logoLink.href = "index.html";
+    logoLink.href = "Home.html";
 
     const logoImg = document.createElement("img");
     logoImg.classList.add("logo");
-    logoImg.src = "images/logo-pccomponentes.webp";
+    logoImg.src = "../images/logo-pccomponentes.webp";
     logoImg.alt = "logo-pccomponentes";
     logoImg.title = "logo-pccomponentes";
 
@@ -58,7 +58,7 @@ function createNavbar() {
 
     document.getElementById("logout").addEventListener("click", function () {
         alert("Cerraste sesión correctamente");
-        window.location.href = "../pages/login.html";
+        window.location.href = "../index.html";
     });
 }
 createNavbar();

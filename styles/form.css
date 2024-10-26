@@ -1,0 +1,26 @@
+.formulario {
+    gap: 12px;
+  }
+  
+  .form-label{
+    color: black;
+    font-weight: 500;
+  }
+  
+  .btn{
+    color: azure;
+    background-color: #212529;
+    border-color: azure;
+  }
+  .text-label{
+    color: black;
+  }
+  .register-link {
+    color: #007bff !important;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration: none;
+}
+.register-link:hover {
+  color: #0056b3 !important;
+}

@@ -1,0 +1,165 @@
+[
+    {
+        "id": 1,
+        "title": "Procesador Ryzen 9 7900x",
+        "image": "https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-9-7900x.jpg",
+        "description": "Procesador potente para gaming",
+        "price": 999.99,
+        "category": "inicio"
+    },
+    {
+        "id": 2,
+        "title": "Tarjeta Gráfica GTX 3080",
+        "image": "https://logg.api.cygnus.market/static/logg/Global/Placa%20de%20Video%20MSI%20NVIDIA%20GeForce%20RTX%203080%20VENTUS%203X%20PLUS%20OC%2010GB%20GDDR6X%20LHR%20+%20SPIDER-MAN/1659232cfc1a4a859febd307d78dce04.webp",
+        "description": "Tarjeta gráfica de alta gama",
+        "price": 1499.99,
+        "category": "inicio"
+    },
+    {
+        "id": 3,
+        "title": "Memoria RAM 32GB",
+        "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/KF432C16BB-32_800.jpg",
+        "description": "Memoria RAM rápida y eficiente",
+        "price": 199.99,
+        "category": "inicio"
+    },
+    {
+        "id": 4,
+        "title": "Fuente 650W",
+        "image": "https://s3-sa-east-1.amazonaws.com/saasargentina/wDhgMDVj6ZwWFOuWiK6u/imagen",
+        "description": "Fuente confiable para tu PC",
+        "price": 89.99,
+        "category": "inicio"
+    },
+    {
+        "id": 5,
+        "title": "HDD 1TB WD",
+        "image": "https://fullh4rd.com.ar/img/productos/12/disco-hdd-1tb-wd-blue-sata-iii-35-0.jpg",
+        "description": "HDD confiable y de maxima velocidad",
+        "price": 149.99,
+        "category": "componentes"
+    },
+    {
+        "id": 6,
+        "title": "SSD 1TB Samsung",
+        "image": "https://tienda.starware.com.ar/wp-content/uploads/2023/05/disco-solido-ssd-samsung-870-evo-4tb-sata-iii-25p-2603-6302.jpg",
+        "description": "SSD externo rápido y confiable",
+        "price": 149.99,
+        "category": "componentes"
+    },
+    {
+        "id": 7,
+        "title": "Refrigeración líquida Corsair",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_692988-MLU74361385264_022024-O.webp",
+        "description": "Refrigeración líquida eficiente",
+        "price": 159.99,
+        "category": "componentes"
+    },
+    {
+        "id": 8,
+        "title": "Caja NZXT H510",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_997343-MLU73238583241_122023-O.webp",
+        "description": "Caja de PC elegante y funcional",
+        "price": 69.99,
+        "category": "componentes"
+    },
+
+    {
+        "id": 9,
+        "title": "Monitor LG UltraWide",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_697308-MLA50497374187_062022-O.webp",
+        "description": "Monitor UltraWide para productividad",
+        "price": 499.99,
+        "category": "monitores"
+    },
+    {
+        "id": 10,
+        "title": "Monitor Dell 27 4K",
+        "image": "https://http2.mlstatic.com/D_959090-MLA76369039163_052024-C.jpg",
+        "description": "Monitor 4K de alta definición",
+        "price": 599.99,
+        "category": "monitores"
+    },
+    {
+        "id": 11,
+        "title": "Monitor BenQ 24",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_660432-MLA74543255307_022024-O.webp",
+        "description": "Monitor ideal para diseño gráfico",
+        "price": 249.99,
+        "category": "monitores"
+    },
+    {
+        "id": 12,
+        "title": "Monitor Acer 27 144Hz",
+        "image": "https://m.media-amazon.com/images/I/81LQiz-a7aL.jpg",
+        "description": "Monitor 144Hz para gamers",
+        "price": 299.99,
+        "category": "monitores"
+    },
+
+    {
+        "id": 13,
+        "title": "Notebook Dell XPS 13",
+        "image": "data:image/jpeg;base64,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",
+        "description": "Notebook potente y ultradelgada",
+        "price": 1299.99,
+        "category": "notebooks"
+    },
+    {
+        "id": 14,
+        "title": "MacBook Pro 16",
+        "image": "https://cdn-ipoint.waugi.com.ar/img/cms/landings-fichas/Mac/Macbook%20Pro%2016/RX-S1_Smart_1.png",
+        "description": "La mejor laptop para profesionales",
+        "price": 2399.99,
+        "category": "notebooks"
+    },
+    {
+        "id": 15,
+        "title": "ASUS ROG Zephyrus G14",
+        "image": "https://acdn.mitiendanube.com/stores/001/907/418/products/1-0db142b8c6c121127217116552781441-1024-1024.jpg",
+        "description": "Notebook para gamers de alto rendimiento",
+        "price": 1499.99,
+        "category": "notebooks"
+    },
+    {
+        "id": 16,
+        "title": "HP Spectre x360",
+        "image": "https://acdn.mitiendanube.com/stores/001/907/418/products/2-d34682014e882f429917275363747565-1024-1024.jpg",
+        "description": "Laptop 2 en 1 versátil y potente",
+        "price": 1399.99,
+        "category": "notebooks"
+    },
+
+    {
+        "id": 17,
+        "title": "Teclado mecánico Razer",
+        "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/RZ03-04340200-R3U1_800.jpg",
+        "description": "Teclado mecánico con retroiluminación",
+        "price": 99.99,
+        "category": "perifericos"
+    },
+    {
+        "id": 18,
+        "title": "Ratón Logitech G502",
+        "image": "https://resource.logitechg.com/d_transparent.gif/content/dam/gaming/en/products/g502-lightspeed-gaming-mouse/g502-lightspeed-gallery-1.png",
+        "description": "Ratón gaming con múltiples botones",
+        "price": 79.99,
+        "category": "perifericos"
+    },
+    {
+        "id": 19,
+        "title": "Auriculares HyperX Cloud II",
+        "image": "https://diamondsystemar.vtexassets.com/arquivos/ids/160107-800-450?v=638506195666870000&width=800&height=450&aspect=true",
+        "description": "Auriculares con sonido envolvente",
+        "price": 89.99,
+        "category": "perifericos"
+    },
+    {
+        "id": 20,
+        "title": "Mousepad Razer Goliathus",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_960801-MLA31029541643_062019-O.webp",
+        "description": "Mousepad grande y duradero",
+        "price": 29.99,
+        "category": "perifericos"
+    }
+]

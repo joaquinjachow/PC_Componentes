@@ -34,7 +34,8 @@ h2 {
 h3 {
   font-size: 26px; }
 
-  /* header*/
+
+/* Navbar Styles */
 .logo {
     width: 190px;
     padding-left: 20%;
@@ -43,73 +44,4 @@ h3 {
 .nav-link{
   font-size: 18px;
   font-weight: 500;
-}
-
-.formulario {
-  gap: 12px;
-}
-
-.form-label{
-  color: black;
-  font-weight: 500;
-}
-
-.btn{
-  color: azure;
-  background-color: #212529;
-  border-color: azure;
-}
-
-.quantity-control {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-
-.quantity-control button {
-  border-radius: 0;
-  padding: 5px 10px;
-}
-
-.quantity-control input {
-  max-width: 50px;
-  text-align: center;
-  margin: 0 10px;
-  border: 1px solid #ced4da;
-}
-
-.card-body {
-  padding: 1.5rem;
-}
-
-.btn-primary {
-  background-color: #ff5722;
-  border-color: #ff5722;
-}
-
-.btn-primary:hover {
-  background-color: #e64a19;
-  border-color: #e64a19;
-}
-
-.card-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.card-text.price {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #28a745;
-}
-
-.card-text.description {
-  color: #6c757d;
-  margin-bottom: 1rem;
-}
-
-.form-control {
-  border-radius: 100;
-  text-align: center;
 }
