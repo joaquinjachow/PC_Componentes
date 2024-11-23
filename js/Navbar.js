@@ -4,9 +4,16 @@ const navLinks = [
     { title: "Monitores", href: "Monitores.html" },
     { title: "Notebooks", href: "Notebook.html" },
     { title: "Periféricos", href: "Perifericos.html" },
+    { title: "Buscar", href: "#", isIconOnly: true, class: "search-icon" },
     { title: "Carrito", href: "carrito.html", isIconOnly: true },
     { title: "Logout", href: "../index.html", action: "logout", class: "logout-button" }
 ];
+
+const searchSVG = `
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 16 16">
+    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85a1.007 1.007 0 0 0-.115-.098zm-5.242 1.398a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/>
+</svg>
+`;
 
 const carritoSVG = `
 <svg id='Shopping_Cart_24' width='28' height='28' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
@@ -18,7 +25,6 @@ const carritoSVG = `
     </g>
 </svg>
 `;
-
 
 const generateNavbar = () => {
     return `
@@ -32,7 +38,7 @@ const generateNavbar = () => {
                         <li class="nav-item">
                             <a class="nav-link ${link.class ? link.class : ''}" href="${link.href}" 
                                ${link.action ? `data-action="${link.action}"` : ''}>
-                                ${link.isIconOnly ? carritoSVG : link.title}
+                               ${link.isIconOnly ? (link.class === 'search-icon' ? searchSVG : carritoSVG) : link.title}
                             </a>
                         </li>
                     `).join('')}
