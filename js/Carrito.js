@@ -1,5 +1,6 @@
 const carritoContainer = document.getElementById('carrito-container');
 const totalContainer = document.getElementById('total');
+const finalizarCarritoBtn = document.getElementById('finalizar-carrito');
 
 function cargarCarrito() {
   const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
@@ -16,7 +17,6 @@ function mostrarCarrito(carrito) {
 
   let total = 0;
   carrito.forEach(producto => {
-    console.log('Producto en el carrito:', producto);
     const { id, nombre, precio, cantidad, image } = producto;
     total += precio * cantidad;
 
@@ -39,6 +39,7 @@ function mostrarCarrito(carrito) {
   });
 
   totalContainer.textContent = `Total: $${total.toFixed(2)}`;
+  finalizarCarritoBtn.style.display = carrito.length > 0 ? 'block' : 'none';
 }
 
 function eliminarProducto(id) {
@@ -48,4 +49,19 @@ function eliminarProducto(id) {
   cargarCarrito();
 }
 
+function generarMensajeWhatsApp() {
+  const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+  let mensaje = "Hola, me gustaría comprar los siguientes productos:\n\n";
+  carrito.forEach(producto => {
+    const { nombre, precio, cantidad } = producto;
+    mensaje += `${nombre} - Precio: $${precio} x ${cantidad} = $${precio * cantidad}\n`;
+  });
+  const total = carrito.reduce((sum, producto) => sum + producto.precio * producto.cantidad, 0);
+  mensaje += `\nTotal: $${total.toFixed(2)}`;
+  const telefono = '3515129921';
+  const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, '_blank');
+}
+
 document.addEventListener('DOMContentLoaded', cargarCarrito);
+finalizarCarritoBtn.addEventListener('click', generarMensajeWhatsApp);
