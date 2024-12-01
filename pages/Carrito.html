@@ -13,14 +13,11 @@
         <div id="carrito-container"></div>
         <div class="text-end mt-4">
             <h3 id="total">Total: $0</h3>
-            <button id="procesar" class="btn btn-primary mt-2">Procesar Compra</button>
+            <div class="d-flex justify-content-end mt-2">
+                <button id="finalizar-carrito" class="btn btn-primary">Procesar Compra</button>
+            </div>        
         </div>
     </main>
     <script src="../js/Carrito.js"></script>
-    <script>
-        document.getElementById('procesar').addEventListener('click', function() {
-            window.location.href = 'home.html';
-        });
-    </script>
 </body>
 </html>
