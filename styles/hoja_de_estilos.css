@@ -53,3 +53,8 @@ h3 {
   border-radius: 4px;
   text-decoration: none;
 }
+
+.modal-title {
+  color: black;
+  font-weight: 500;
+}
