@@ -4,6 +4,7 @@ const navLinks = [
     { title: "Monitores", href: "Monitores.html" },
     { title: "Notebooks", href: "Notebook.html" },
     { title: "Periféricos", href: "Perifericos.html" },
+    { title: "Favoritos", href: "favoritos.html" },
     { title: "Buscar", href: "#", isIconOnly: true, class: "search-icon" },
     { title: "Carrito", href: "carrito.html", isIconOnly: true },
     { title: "Logout", href: "../index.html", action: "logout", class: "logout-button" }
