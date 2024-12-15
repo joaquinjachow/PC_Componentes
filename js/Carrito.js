@@ -65,3 +65,10 @@ function generarMensajeWhatsApp() {
 
 document.addEventListener('DOMContentLoaded', cargarCarrito);
 finalizarCarritoBtn.addEventListener('click', generarMensajeWhatsApp);
+
+document.getElementById('vaciar-carrito').addEventListener('click', () => {
+  localStorage.removeItem('carrito');
+  alert("El carrito ha sido vaciado.");
+  document.getElementById('carrito-container').innerHTML = '';
+  document.getElementById('total').innerText = 'Total: $0';
+});

@@ -37,3 +37,9 @@ function eliminarDeFavoritos(id) {
 }
 
 document.addEventListener('DOMContentLoaded', cargarFavoritos);
+
+document.getElementById('vaciar-favoritos').addEventListener('click', () => {
+    localStorage.removeItem(FAVORITOS_KEY);
+    alert("Todos los favoritos han sido eliminados.");
+    document.getElementById('favoritos-container').innerHTML = '';
+});

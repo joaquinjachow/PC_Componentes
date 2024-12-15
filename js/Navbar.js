@@ -51,6 +51,18 @@ const generateNavbar = () => {
 
 window.addEventListener('DOMContentLoaded', () => {
     document.body.insertAdjacentHTML("afterbegin", generateNavbar());
+
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+        if (link.href.includes(currentPath)) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+
     const logoutBtn = document.querySelector('a[data-action="logout"]');
     if (logoutBtn) {
         logoutBtn.addEventListener('click', (e) => {

@@ -9,8 +9,11 @@
 </head>
 <body>
     <main class="container my-5">
-        <h1 class="text-center mb-4">Carrito de Compras</h1>
-        <div id="carrito-container"></div>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>Carrito de Compras</h1>
+            <button id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</button>
+        </div>
+        <div class="mt-4" id="carrito-container"></div>
         <div class="text-end mt-4">
             <h3 id="total">Total: $0</h3>
             <div class="d-flex justify-content-end mt-2">
@@ -18,6 +21,7 @@
             </div>        
         </div>
     </main>
+    <script src="../js/Navbar.js"></script>
     <script src="../js/Carrito.js"></script>
 </body>
 </html>
