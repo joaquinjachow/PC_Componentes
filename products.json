@@ -35,7 +35,7 @@
         "id": 5,
         "title": "HDD 1TB WD",
         "image": "https://fullh4rd.com.ar/img/productos/12/disco-hdd-1tb-wd-blue-sata-iii-35-0.jpg",
-        "description": "HDD confiable y de maxima velocidad",
+        "description": "HDD confiable",
         "price": 149.99,
         "category": "componentes"
     },
@@ -68,7 +68,7 @@
         "id": 9,
         "title": "Monitor LG UltraWide",
         "image": "https://http2.mlstatic.com/D_NQ_NP_697308-MLA50497374187_062022-O.webp",
-        "description": "Monitor UltraWide para productividad",
+        "description": "Monitor UltraWide",
         "price": 499.99,
         "category": "monitores"
     },
@@ -117,7 +117,7 @@
         "id": 15,
         "title": "ASUS ROG Zephyrus G14",
         "image": "https://acdn.mitiendanube.com/stores/001/907/418/products/1-0db142b8c6c121127217116552781441-1024-1024.jpg",
-        "description": "Notebook para gamers de alto rendimiento",
+        "description": "Notebook para gamers",
         "price": 1499.99,
         "category": "notebooks"
     },
@@ -134,7 +134,7 @@
         "id": 17,
         "title": "Teclado mecánico Razer",
         "image": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/RZ03-04340200-R3U1_800.jpg",
-        "description": "Teclado mecánico con retroiluminación",
+        "description": "Teclado mecánico",
         "price": 99.99,
         "category": "perifericos"
     },
@@ -142,7 +142,7 @@
         "id": 18,
         "title": "Ratón Logitech G502",
         "image": "https://resource.logitechg.com/d_transparent.gif/content/dam/gaming/en/products/g502-lightspeed-gaming-mouse/g502-lightspeed-gallery-1.png",
-        "description": "Ratón gaming con múltiples botones",
+        "description": "Ratón gaming",
         "price": 79.99,
         "category": "perifericos"
     },
